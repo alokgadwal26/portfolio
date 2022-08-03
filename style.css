@@ -305,6 +305,14 @@ margin-top: 20px;
     font-size: 20px;
     color: #fff;
 }
+
+#msg{
+    color: #61b752;
+    margin-top: -10px;
+    display: block;
+}
+
+
 /* ------------------media Query------------------ */
 @media (min-width:320px) and (max-width:600px) {
   
