@@ -89,11 +89,11 @@
             </div>
             <div class="about-col2">
                 <h1 class="sub-title">About Me</h1>
-                <p>Hi, I'm Alok Gadwal knowledge about<br> Frontend Developer 💻 <br> UI-UX Designer 🖼️<br> Video Editor 🎥.
+                <p>Hi, I'm Alok Gadwal knowledge about<br> Web Designing 💻<br>Graphics Designer 🖼️<br>Video Editor 🎥.
                   </p>
                 <div class="tab-titles">
                     <h1 class="tab-h1">Skills</h1><p class="tab-p">HTML, CSS, Javascript, Adobe Photoshop, Adobe XD, Adobe Premiere pro.</p><br>
-                    <h1 class="tab-h1">Experience</h1><p class="tab-p"> 1 Years Experience in Freelanceing Field.</p><br>
+                    <h1 class="tab-h1">Experience</h1><p class="tab-p"> 3 Years Experience in Freelanceing Work.</p><br>
                     <h1 class="tab-h1">Education</h1><p class="tab-p"><b>Bachelor's degree in Computer Science</b> <br>(RTU) Gurukul Institute of Engineering & Technology,Kota Rajasthan</p>
                 </div>
             </div>
@@ -108,15 +108,15 @@
         <div class="work">
           <img src="images/work-1.png" alt="">
           <div class="layer">
-              <h3>FrontEnd Developer</h3>
-              <p>ImagesHub Website</p>
+              <h3>Website Design</h3>
+              <p>Images Website</p>
               <a href="https://alokgadwal26.github.io/ImagesHub/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
       </div>
       <div class="work">
           <img src="images/work-2.png" alt="">
           <div class="layer">
-              <h3>UI-UX Design</h3>
+              <h3>Graphic Design</h3>
               <p>Website Images Edits, logo, UI-UX </p>
               <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
@@ -137,13 +137,13 @@
         <div class="services-list">
             <div>
                 <i class="fa-solid fa-code"></i>
-                <h2>Frontend Developer</h2>
+                <h2>Web Desiginer</h2>
                 <p>All types of website desinging frontend, Backend, static and dynamic website, portfolio, E-Commers, Bussiness Education etc.</p>
                 <a href="#">Learn More</a>
             </div>
             <div>
                 <i class="fa-solid fa-crop"></i>
-                <h2>UI-UX Designer</h2>
+                <h2>Graphic Designer</h2>
                 <p>All Types of designing Workin UI-UX Designing.</p>
                 <a href="#">Learn More</a>
             </div>
@@ -174,12 +174,13 @@
             <a href="images/Alok_CV.pdf" class="btn2">Download CV</a>
         </div>
         <div class="contect-right">
-        <form>
+        <form name="submit-to-google-sheet">
             <input type="text" name="Name" placeholder="Your Name" required>
             <input type="text" name="Email" placeholder="Your Email" required>
             <textarea name="Message" rows="6" placeholder="Your message"></textarea>
             <button type="submit" class="btn3">Submit</button>
         </form>
+        <span id="msg"></span>
     </div>
     </div>
     </div>
@@ -200,6 +201,26 @@
   $('.nav-link').on('click',function() {
   $('.navbar-collapse').collapse('hide');
 });
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyr5FtT6hTF6U-zHpKrnL9j96YKvUTq4fvWthoots8sCMKH0EeFlVa_tZtIKjs6BT7kjw/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById('msg')
+
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
 </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
