@@ -333,6 +333,7 @@ margin-top: 20px;
         .row {
     display: flex !important;
     flex-direction: column !important;
+    padding:10px;
 }
   .carousel-control-next-icon, .carousel-control-prev-icon {
     position: relative;
