@@ -329,6 +329,11 @@ margin-top: 20px;
 /* ------------------media Query------------------ */
 
 @media (min-width:320px) and (max-width:600px) {
+    
+        .row {
+    display: flex !important;
+    flex-direction: column !important;
+}
   .carousel-control-next-icon, .carousel-control-prev-icon {
     position: relative;
     bottom: 130px;
@@ -364,10 +369,6 @@ margin-top: 20px;
     padding: 110px;
 }
     
-    .row {
-    display: flex !important;
-    flex-direction: column;
-}
     #header{
         background-image: url(images/phone-background.png);
         position: relative;
