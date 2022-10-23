@@ -29,8 +29,9 @@ p {
     font-size: 30px;
 
 }
-.navbar-toggler:focus{
-    box-shadow: none;
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
    
 }
 .w-100 {
