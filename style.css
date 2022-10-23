@@ -91,7 +91,7 @@ p {
 
 /* <!----------------------------portfolio Secttion----------------------------*/
 #portfolio{
-     padding: 90px 0;
+     padding: 90px 15px;
 }
 .work-list{
     display: grid;
