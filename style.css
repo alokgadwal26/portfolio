@@ -326,21 +326,6 @@ margin-top: 20px;
 
 /* ------------------media Query------------------ */
 
-@media screen and (max-width:425px) {
-  .carousel-control-next-icon, .carousel-control-prev-icon {
-    position: relative;
-    bottom: 115px;
-}
-    
-    @media screen and (max-width:500px) {
-  .carousel-control-next-icon, .carousel-control-prev-icon {
-    position: relative;
-    bottom: 100px;
-}
-
-
-
-
 @media (max-width:320px) {
   .carousel-control-next-icon, .carousel-control-prev-icon {
     position: relative;
@@ -372,6 +357,11 @@ margin-top: 20px;
     }
 }
 @media (min-width:601px) and (max-width:992px) {
+    
+    .row {
+    display: flex !important;
+    flex-direction: column;
+}
     #header{
         background-image: url(images/phone-background.png);
         position: relative;
