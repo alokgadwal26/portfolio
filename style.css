@@ -366,9 +366,6 @@ margin-top: 20px;
 }
 @media (min-width:601px) and (max-width:992px) {
     
-    #about{
-    padding: 110px;
-}
       .carousel-control-next-icon, .carousel-control-prev-icon {
     position: relative;
     bottom: 70px;
