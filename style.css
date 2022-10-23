@@ -325,7 +325,23 @@ margin-top: 20px;
 
 
 /* ------------------media Query------------------ */
-@media (min-width:320px) and (max-width:600px) {
+
+@media screen and (max-width:425px) {
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    position: relative;
+    bottom: 115px;
+}
+    
+    @media screen and (max-width:500px) {
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    position: relative;
+    bottom: 100px;
+}
+
+
+
+
+@media (max-width:320px) {
   .carousel-control-next-icon, .carousel-control-prev-icon {
     position: relative;
     bottom: 130px;
