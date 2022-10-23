@@ -326,7 +326,10 @@ margin-top: 20px;
 
 /* ------------------media Query------------------ */
 @media (min-width:320px) and (max-width:600px) {
-
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    position: relative;
+    bottom: 130px;
+}
     #header{
         background-image: url(images/phone-background.png);
         position: relative;
