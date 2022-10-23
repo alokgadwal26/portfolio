@@ -328,7 +328,7 @@ margin-top: 20px;
 
 /* ------------------media Query------------------ */
 
-@media (max-width:320px) {
+@media (min-width:320px) and (max-width:600px) {
   .carousel-control-next-icon, .carousel-control-prev-icon {
     position: relative;
     bottom: 130px;
