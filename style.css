@@ -336,10 +336,6 @@ margin-top: 20px;
     flex-direction: column !important;
     padding:10px;
 }
-  .carousel-control-next-icon, .carousel-control-prev-icon {
-    position: relative;
-    bottom: 130px;
-}
     #header{
         background-image: url(images/phone-background.png);
         position: relative;
@@ -369,10 +365,6 @@ margin-top: 20px;
     
     .contect-right {
     flex-basis: 100%;
-}
-      .carousel-control-next-icon, .carousel-control-prev-icon {
-    position: relative;
-    bottom: 70px;
 }
     
     #header{
